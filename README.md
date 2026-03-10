@@ -1,0 +1,1 @@
+O código simula o comportamento básico de um veículo, permitindo definir um modelo, capacidade de passageiros e velocidade máxima. O sistema possui validações lógicas, como impedir a abertura de portas enquanto o carro está em movimento.
