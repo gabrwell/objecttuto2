@@ -1,9 +1,9 @@
 public class Car {
 
-    float velocidadeMaxima;
-    String modelo;
-    int quantidadeDeAssentos;
-    float velocidadeAtual; // New attribute to track movement
+    private float velocidadeMaxima;
+    private String modelo;
+    private int quantidadeDeAssentos;
+    private float velocidadeAtual; // New attribute to track movement
 
     public Car(String modelo, int quantidadeDeAssentos, float velocidadeMaxima) {
         this.modelo = modelo;
@@ -28,5 +28,38 @@ public class Car {
         } else {
             System.out.println("Safety Warning: Cannot open doors while the car is moving!");
         }
+    }
+
+    public int getQuantidadeDeAssentos() {
+        return quantidadeDeAssentos;
+    }
+
+    public void setQuantidadeDeAssentos(int quantidadeDeAssentos) {
+        this.quantidadeDeAssentos = quantidadeDeAssentos;
+    }
+
+    public String getModelo() {
+        return modelo;
+
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public float getVelocidadeAtual() {
+        return velocidadeAtual;
+    }
+
+    public void setVelocidadeAtual(float velocidadeAtual) {
+        this.velocidadeAtual = velocidadeAtual;
+    }
+
+    public float getVelocidadeMaxima() {
+        return velocidadeMaxima;
+    }
+
+    public void setVelocidadeMaxima(float velocidadeMaxima) {
+        this.velocidadeMaxima = velocidadeMaxima;
     }
 }
